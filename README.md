@@ -6,7 +6,7 @@
 ### General
 Implementar un sistema automatizado de registro y control de asistencia para los trabajadores de la Universidad ETITC, con el fin de optimizar el proceso de registro, reducir los tiempos de espera y mejorar la eficiencia operativa de la institución.
 
-### Especificos o ### Auxiliares
+### Especificos o Auxiliares
 1).Desarrollar e implementar un sistema digital de registro que permita a los trabajadores (docentes, celadores, personal de oficios varios) registrar su asistencia de manera rápida y eficiente.
 
 2).Capacitar al personal administrativo y a los trabajadores en el uso del nuevo sistema, asegurando que todos puedan operar la plataforma de manera efectiva.
