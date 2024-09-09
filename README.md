@@ -27,7 +27,8 @@ La implementación de un sistema automatizado de registro permitirá optimizar e
 ## Planteamiento
 En la Universidad ETITC, se ha identificado un problema recurrente en el proceso de registro de trabajadores, especialmente en lo que respecta a docentes, celadores y personal de oficios varios. El proceso de registro actual, que se realiza de manera manual, es percibido como tedioso y demorado, lo que genera molestias tanto en los trabajadores como en el personal administrativo encargado de llevar a cabo estos registros. Esta situación se debe, en gran medida, a la falta de un sistema automatizado eficiente y a la ausencia de un método digital que permita un registro más rápido y preciso. Como resultado, este problema afecta negativamente la eficiencia operativa de la universidad, impactando también en la satisfacción y productividad de los trabajadores. Además, esta demora puede ralentizar el inicio de las clases y la entrega de salones e implementos tecnológicos a los docentes, lo que a su vez afecta el proceso de aprendizaje de los estudiantes. Es necesario identificar las causas subyacentes y proponer soluciones que optimicen este proceso, haciéndolo más ágil y efectivo.
 
-1. Identificación de Modelos en Sistemas Reales
+### 1. Identificación de Modelos en Sistemas Reales
+
 Sistema Elegido: Sistema Automatizado de Registro de Asistencia para los Trabajadores de la Universidad ETITC
 
 ### Clases:
