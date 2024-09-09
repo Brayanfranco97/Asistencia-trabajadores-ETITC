@@ -43,11 +43,13 @@ horaEntrada: DateTime
 horaSalida: DateTime
 
 ### Métodos:
+
 registrarEntrada(hora: DateTime): void
 registrarSalida(hora: DateTime): void
 RegistroAsistencia
 
 ### Atributos:
+
 idRegistro: int
 trabajador: Trabajador
 fecha: Date
@@ -55,11 +57,13 @@ horaEntrada: DateTime
 horaSalida: DateTime
 
 ### Métodos:
+
 calcularHorasTrabajadas(): float
 actualizarRegistro(horaEntrada: DateTime, horaSalida: DateTime): void
 Administrativo
 
 ### Atributos:
+
 idAdministrativo: int
 nombre: string
 Métodos:
@@ -68,8 +72,11 @@ consultarRegistro(trabajador: Trabajador, fecha: Date): RegistroAsistencia
 ajustarRegistro(registro: RegistroAsistencia): void
 
 ### Relaciones:
+
 Un Trabajador puede tener múltiples Registros de Asistencia.
+
 Un Registro de Asistencia está asociado a un único Trabajador.
+
 Un Administrativo puede consultar y ajustar varios Registros de Asistencia.
 
 
@@ -78,18 +85,29 @@ Un Administrativo puede consultar y ajustar varios Registros de Asistencia.
 ### 1. Metodología Tradicional: Modelo en Cascada (Waterfall)
 
 ### Fases:
+
 Recolección de Requisitos: Definir los requerimientos del sistema con los representantes de la universidad.
+
 Diseño del Sistema: Crear la arquitectura del sistema, la base de datos y la interfaz de usuario.
+
 Desarrollo: Implementar el código según lo planificado.
+
 Pruebas: Validar el sistema para asegurar que funcione correctamente.
+
 Implementación: Desplegar el sistema en la universidad.
+
 Mantenimiento: Corregir errores o problemas tras la implementación.
 
 ### Roles:
+
 Jefe de Proyecto: Coordina el desarrollo y supervisa el progreso.
+
 Analista de Requisitos: Recoge y documenta los requerimientos.
+
 Desarrollador: Implementa el código del sistema.
+
 Tester: Realiza pruebas de calidad.
+
 Soporte Técnico: Atiende problemas durante y después de la implementación.
 
 ### 2. Metodologías Ágiles:
@@ -97,46 +115,72 @@ Soporte Técnico: Atiende problemas durante y después de la implementación.
 ### 2.1. Scrum
 
 ### Fases:
+
 Backlog de Producto: Definir y priorizar los requerimientos del sistema.
+
 Sprint Planning: Seleccionar las tareas a desarrollar en cada sprint.
+
 Desarrollo: Desarrollar las funcionalidades del sistema durante sprints.
+
 Sprint Review: Revisar el trabajo con los stakeholders.
+
 Sprint Retrospective: Mejorar los procesos para el siguiente sprint.
 
 ### Roles:
+
 Product Owner: Representa a la universidad y define los requisitos.
+
 Scrum Master: Facilita el proceso Scrum y asegura que se sigan las reglas.
+
 Equipo de Desarrollo: Implementa las funcionalidades del sistema.
 
 ### 2.2. Kanban
 
 ### Fases:
+
 Tablero Kanban: Visualizar las tareas en columnas (Por Hacer, En Proceso, Completado).
+
 Desarrollo Continuo: Trabajar en las tareas según el flujo de trabajo.
+
 Monitoreo del Flujo: Garantizar un flujo constante de trabajo.
 
 ### Roles:
+
 Líder de Proyecto: Monitorea el progreso de las tareas.
+
 Equipo de Desarrollo: Toma las tareas del tablero y las implementa.
+
 Administrador de Cambios: Supervisa las modificaciones y ajustes.
 
 ### 2.3. Extreme Programming (XP)
 
 ### Fases:
+
 Planificación: Dividir el desarrollo en historias de usuario pequeñas.
+
 Desarrollo en Pares: Los desarrolladores trabajan en parejas para garantizar la calidad.
+
 Retroalimentación Continua: Entregas pequeñas con comentarios rápidos.
+
 Pruebas Automáticas: Crear pruebas para verificar el correcto funcionamiento.
 
 ### Roles:
+
 Cliente (ETITC): Da retroalimentación constante.
+
 Equipo de Desarrollo: Desarrolla el sistema y pruebas.
+
 Tester: Asegura la calidad del software.
 
 ### Requisitos Funcionales:
+
 Permitir que los trabajadores registren su asistencia de manera digital (app móvil o terminal física).
+
 Integración en tiempo real con la base de datos de la universidad.
+
 Interfaz intuitiva para que el personal administrativo consulte y ajuste los registros.
+
 Capacitar al personal en el uso del sistema.
+
 Mantener y ajustar el sistema periódicamente para asegurar su buen funcionamiento.
 
