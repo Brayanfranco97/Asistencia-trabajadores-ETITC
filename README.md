@@ -1,177 +1,86 @@
 # Asistencia-trabajadores-ETITC
 ---
+## Planteamiento del problema
+El sistema actual de la Universidad ETITC para el registro de asistencia de los trabajadores es manual, lo que genera retrasos, errores humanos, y dificultades en la recolección de datos para su análisis posterior. El objetivo de este proyecto es implementar un sistema automatizado que permita registrar y controlar la asistencia de los empleados de manera eficiente, reduciendo el margen de error y mejorando la capacidad de generar informes precisos en tiempo real.
 
 ## Objetivo
 
 ### General
-Implementar un sistema automatizado de registro y control de asistencia para los trabajadores de la Universidad ETITC, con el fin de optimizar el proceso de registro, reducir los tiempos de espera y mejorar la eficiencia operativa de la institución.
-
+Implementar un sistema automatizado que permita registrar la entrada y salida de los trabajadores en la Universidad ETITC, mejorando la precisión y la rapidez del control de asistencia.
 ### Especificos o Auxiliares
-1).Desarrollar e implementar un sistema digital de registro que permita a los trabajadores (docentes, celadores, personal de oficios varios) registrar su asistencia de manera rápida y eficiente.
+1). Digitalizar el proceso de registro de asistencia utilizando terminales automatizadas.
 
-2).Capacitar al personal administrativo y a los trabajadores en el uso del nuevo sistema, asegurando que todos puedan operar la plataforma de manera efectiva.
+2). Desarrollar una interfaz de usuario amigable que permita a los empleados registrar su asistencia de manera rápida.
 
-3).Reducir los tiempos de espera asociados al proceso de registro mediante la simplificación y automatización de los procedimientos actuales.
+3). Integrar el sistema con una base de datos centralizada que almacene los registros de asistencia y permita la generación de reportes en tiempo real.
 
-4).Evaluar y ajustar el sistema periódicamente para asegurar su eficacia y resolver posibles inconvenientes que puedan surgir durante su implementación.
+4)- Capacitar al personal administrativo en el uso del nuevo sistema automatizado.
 
-5).Integrar el sistema de registro con la base de datos institucional, facilitando la gestión y consulta de la información de los trabajadores en tiempo real.
+5). Evaluar el impacto del sistema en la reducción del tiempo de registro y la mejora de la precisión de los datos.
 
 
 
 ## Justificación 
-El proceso de registro de asistencia en la Universidad ETITC presenta actualmente desafíos significativos debido a su naturaleza tediosa y demorada. El registro manual, que se utiliza actualmente, carece de la velocidad y eficiencia necesarias para manejar el volumen de trabajadores en la universidad. Esta situación afecta no solo la eficiencia operativa de la institución, sino que también puede impactar negativamente en la satisfacción y productividad de los trabajadores, además de ralentizar procesos críticos como el inicio de clases y la entrega de salones e implementos tecnológicos a los docentes.
+El registro manual actual no solo es ineficiente, sino que también está sujeto a errores humanos que pueden impactar negativamente en la calidad de los datos recolectados. Con la implementación de un sistema automatizado, se espera una reducción del 50% en los tiempos de registro por trabajador y un 80% en la cantidad de errores reportados. Además, la universidad podrá generar reportes de asistencia en tiempo real, lo que facilitará la toma de decisiones en relación con la gestión de recursos humanos.
 
-La implementación de un sistema automatizado de registro permitirá optimizar este proceso, reduciendo significativamente los tiempos de espera y mejorando la precisión en el registro de la información. Además, un sistema digitalizado facilitará la gestión de datos y minimizará los errores humanos, mientras que la capacitación del personal garantizará su uso efectivo. En resumen, esta iniciativa contribuirá a mejorar la satisfacción de los trabajadores, la eficiencia del personal administrativo y la calidad general de la gestión institucional en la Universidad ETITC.
+### Metodologías de Desarrollo
 
-## Planteamiento
-En la Universidad ETITC, se ha identificado un problema recurrente en el proceso de registro de trabajadores, especialmente en lo que respecta a docentes, celadores y personal de oficios varios. El proceso de registro actual, que se realiza de manera manual, es percibido como tedioso y demorado, lo que genera molestias tanto en los trabajadores como en el personal administrativo encargado de llevar a cabo estos registros. Esta situación se debe, en gran medida, a la falta de un sistema automatizado eficiente y a la ausencia de un método digital que permita un registro más rápido y preciso. Como resultado, este problema afecta negativamente la eficiencia operativa de la universidad, impactando también en la satisfacción y productividad de los trabajadores. Además, esta demora puede ralentizar el inicio de las clases y la entrega de salones e implementos tecnológicos a los docentes, lo que a su vez afecta el proceso de aprendizaje de los estudiantes. Es necesario identificar las causas subyacentes y proponer soluciones que optimicen este proceso, haciéndolo más ágil y efectivo.
+## Modelo en Cascada (Waterfall)
+El modelo en cascada sigue un enfoque secuencial, donde cada fase debe completarse antes de avanzar a la siguiente. Para nuestro proyecto de implementación de un sistema automatizado de registro de asistencia, el modelo se aplicaría de la siguiente manera:
 
-### 1. Identificación de Modelos en Sistemas Reales
+## Recolección de Requisitos:
+En esta fase, se trabajará estrechamente con el personal administrativo de la Universidad ETITC para identificar las necesidades específicas del sistema. Se deben definir requisitos funcionales, como el uso de terminales RFID para el registro de asistencia, y requisitos no funcionales, como el tiempo máximo de respuesta del sistema (que debe ser menor a 2 segundos). Se realizarán reuniones con los usuarios clave, como el departamento de recursos humanos, para definir los tipos de reportes necesarios (por ejemplo, reportes de ausentismo mensual y horas trabajadas).
 
-Sistema Elegido: Sistema Automatizado de Registro de Asistencia para los Trabajadores de la Universidad ETITC
+## Diseño del Sistema:
+En esta fase se creará un diseño detallado de la arquitectura del sistema. Para el proyecto, esto implica definir cómo se integrarán los lectores de tarjetas RFID con la base de datos de los trabajadores. Además, se diseñará una interfaz de usuario sencilla que permita a los empleados registrar su asistencia con un solo paso, y se estructurará la base de datos para almacenar la información de los trabajadores de manera eficiente. Aquí también se incluirá un diseño para la generación de reportes automáticos que puedan ser consultados por los administradores en tiempo real.
 
-### Clases:
+## Implementación:
+Durante esta fase, los desarrolladores comenzarán a codificar el sistema, siguiendo el diseño aprobado. En nuestro caso, se construirán los módulos de registro, que permiten a los empleados registrar su entrada y salida mediante las tarjetas RFID o huellas dactilares. También se desarrollará un módulo para la generación de reportes personalizados según las necesidades definidas. Además, se integrarán las funcionalidades de seguridad para garantizar que solo los empleados autorizados puedan acceder a sus propios registros.
 
-Trabajador
+## Pruebas:
+Se realizarán pruebas exhaustivas para garantizar que el sistema funcione correctamente en todas las condiciones. Esto incluye pruebas unitarias para cada módulo del sistema, pruebas de integración para asegurar que el sistema completo (lectores, base de datos y reportes) funcione como se espera, y pruebas de rendimiento para garantizar que el sistema responda en menos de 2 segundos cuando un empleado registre su asistencia.
 
-### Atributos:
+## Mantenimiento:
+Una vez que el sistema esté en funcionamiento, se establecerá un plan de mantenimiento para corregir errores que puedan surgir y optimizar su rendimiento a lo largo del tiempo. Por ejemplo, si el personal administrativo detecta que el sistema no genera ciertos reportes como se espera, se realizarán ajustes en el código y en la base de datos para solucionar el problema.
 
-idTrabajador: int
-nombre: string
-rol: string (docente, celador, personal de oficios varios)
-horaEntrada: DateTime
-horaSalida: DateTime
+## Scrum
+Scrum es una metodología ágil que permite desarrollar un sistema de manera iterativa, dividiendo el trabajo en sprints o ciclos cortos. Para nuestro proyecto, Scrum se aplicaría de la siguiente manera:
 
-### Métodos:
+## Product Owner:
+El jefe de recursos humanos de la universidad actuará como Product Owner, representando las necesidades de los usuarios finales. Su responsabilidad será definir y priorizar las funcionalidades esenciales del sistema, como el registro en tiempo real, la validación automática de credenciales y la creación de reportes automatizados.
 
-registrarEntrada(hora: DateTime): void
-registrarSalida(hora: DateTime): void
-RegistroAsistencia
+## Sprint Planning:
+Antes de cada sprint, el equipo se reunirá con el Product Owner para planificar las tareas. En el primer sprint, el equipo puede enfocarse en desarrollar la funcionalidad de registro básico, como permitir que los trabajadores registren su entrada y salida mediante RFID. En un segundo sprint, se integrará la base de datos para almacenar los registros de asistencia. Posteriormente, se desarrollará la funcionalidad de generación de reportes y validación de los datos.
 
-### Atributos:
+## Daily Stand-Up:
+Cada día, el equipo de desarrollo se reunirá brevemente para revisar el progreso y discutir cualquier obstáculo. Por ejemplo, si el equipo encuentra problemas con la integración del lector de huellas digitales, esto se discutirá en la reunión diaria para ajustar las tareas o buscar soluciones.
 
-idRegistro: int
-trabajador: Trabajador
-fecha: Date
-horaEntrada: DateTime
-horaSalida: DateTime
+## Sprint Review:
+Al final de cada sprint, se presentará al Product Owner el trabajo completado. Por ejemplo, si en un sprint se completó la funcionalidad de registro, se mostrará cómo los empleados pueden usar las tarjetas RFID para registrar su asistencia. El Product Owner evaluará el resultado y dará feedback que se aplicará en sprints posteriores.
 
-### Métodos:
+## Kanban
+Kanban es una metodología que permite visualizar el flujo de trabajo y mejorar continuamente los procesos. Para este proyecto, la aplicación de Kanban sería la siguiente:
 
-calcularHorasTrabajadas(): float
-actualizarRegistro(horaEntrada: DateTime, horaSalida: DateTime): void
-Administrativo
+## Tablero Kanban:
+Se utilizará un tablero Kanban para gestionar las tareas del proyecto. Las columnas representarán las fases del desarrollo, como "Por Hacer", "En Proceso", y "Completado". Las tareas, como el desarrollo del módulo de registro, la integración de la base de datos, y la creación de la interfaz de usuario, se moverán a través de estas columnas a medida que el equipo complete cada fase.
 
-### Atributos:
+## Desarrollo Continuo:
+El equipo se enfocará en completar una tarea a la vez, garantizando que el desarrollo sea continuo y sin interrupciones. Por ejemplo, una vez que se termine la funcionalidad de registro de asistencia, el equipo pasará inmediatamente a desarrollar la funcionalidad de generación de reportes.
 
-idAdministrativo: int
-nombre: string
-Métodos:
+## Limitación de Tareas en Proceso:
+Para evitar sobrecargar al equipo, se limitará el número de tareas en proceso al mismo tiempo. Por ejemplo, solo se trabajará en la interfaz de usuario y la base de datos si el equipo ha completado la funcionalidad de registro y generación de reportes.
 
-consultarRegistro(trabajador: Trabajador, fecha: Date): RegistroAsistencia
-ajustarRegistro(registro: RegistroAsistencia): void
+## Programación Extrema (XP)
+Programación Extrema (XP) es una metodología ágil que se centra en la mejora continua y en la colaboración cercana. Para este proyecto, la aplicación de XP se verá de la siguiente manera:
 
-### Relaciones:
+## Desarrollo en Pares:
+El equipo adoptará el desarrollo en pares para garantizar la calidad del código. Por ejemplo, dos desarrolladores trabajarán juntos en la implementación del módulo de registro de asistencia. Mientras uno escribe el código, el otro revisará el trabajo en tiempo real y sugerirá mejoras. Esto no solo asegura un código limpio, sino que también ayuda a detectar y corregir errores rápidamente.
 
-Un Trabajador puede tener múltiples Registros de Asistencia.
+## Refactorización Continua:
+A medida que se completen los módulos del sistema, el equipo refactorizará el código para optimizar su rendimiento. Por ejemplo, si se detecta que el proceso de validación de asistencia es lento, se reestructurará el código para mejorar la eficiencia.
 
-Un Registro de Asistencia está asociado a un único Trabajador.
-
-Un Administrativo puede consultar y ajustar varios Registros de Asistencia.
-
-
-### Metodologías para el Desarrollo del Sistema:
-
-### 1. Metodología Tradicional: Modelo en Cascada (Waterfall)
-
-### Fases:
-
-Recolección de Requisitos: Definir los requerimientos del sistema con los representantes de la universidad.
-
-Diseño del Sistema: Crear la arquitectura del sistema, la base de datos y la interfaz de usuario.
-
-Desarrollo: Implementar el código según lo planificado.
-
-Pruebas: Validar el sistema para asegurar que funcione correctamente.
-
-Implementación: Desplegar el sistema en la universidad.
-
-Mantenimiento: Corregir errores o problemas tras la implementación.
-
-### Roles:
-
-Jefe de Proyecto: Coordina el desarrollo y supervisa el progreso.
-
-Analista de Requisitos: Recoge y documenta los requerimientos.
-
-Desarrollador: Implementa el código del sistema.
-
-Tester: Realiza pruebas de calidad.
-
-Soporte Técnico: Atiende problemas durante y después de la implementación.
-
-### 2. Metodologías Ágiles:
-
-### 2.1. Scrum
-
-### Fases:
-
-Backlog de Producto: Definir y priorizar los requerimientos del sistema.
-
-Sprint Planning: Seleccionar las tareas a desarrollar en cada sprint.
-
-Desarrollo: Desarrollar las funcionalidades del sistema durante sprints.
-
-Sprint Review: Revisar el trabajo con los stakeholders.
-
-Sprint Retrospective: Mejorar los procesos para el siguiente sprint.
-
-### Roles:
-
-Product Owner: Representa a la universidad y define los requisitos.
-
-Scrum Master: Facilita el proceso Scrum y asegura que se sigan las reglas.
-
-Equipo de Desarrollo: Implementa las funcionalidades del sistema.
-
-### 2.2. Kanban
-
-### Fases:
-
-Tablero Kanban: Visualizar las tareas en columnas (Por Hacer, En Proceso, Completado).
-
-Desarrollo Continuo: Trabajar en las tareas según el flujo de trabajo.
-
-Monitoreo del Flujo: Garantizar un flujo constante de trabajo.
-
-### Roles:
-
-Líder de Proyecto: Monitorea el progreso de las tareas.
-
-Equipo de Desarrollo: Toma las tareas del tablero y las implementa.
-
-Administrador de Cambios: Supervisa las modificaciones y ajustes.
-
-### 2.3. Extreme Programming (XP)
-
-### Fases:
-
-Planificación: Dividir el desarrollo en historias de usuario pequeñas.
-
-Desarrollo en Pares: Los desarrolladores trabajan en parejas para garantizar la calidad.
-
-Retroalimentación Continua: Entregas pequeñas con comentarios rápidos.
-
-Pruebas Automáticas: Crear pruebas para verificar el correcto funcionamiento.
-
-### Roles:
-
-Cliente (ETITC): Da retroalimentación constante.
-
-Equipo de Desarrollo: Desarrolla el sistema y pruebas.
-
-Tester: Asegura la calidad del software.
+## Integración Continua:
+Cada vez que se complete un módulo, como la validación de usuarios o la generación de reportes, este se integrará de inmediato en el sistema general. Esto permitirá al equipo detectar y corregir problemas antes de que se conviertan en grandes fallos.
 
 ### Requisitos Funcionales:
 
@@ -184,4 +93,7 @@ Interfaz intuitiva para que el personal administrativo consulte y ajuste los reg
 Capacitar al personal en el uso del sistema.
 
 Mantener y ajustar el sistema periódicamente para asegurar su buen funcionamiento.
+
+## Conclusiones
+La implementación de un sistema automatizado para el registro y control de asistencia en la Universidad ETITC permitirá mejorar la eficiencia del proceso, reducir errores, y facilitar la generación de reportes en tiempo real. Cada metodología de desarrollo presentada (Waterfall, Scrum, Kanban, XP) tiene sus ventajas en diferentes contextos, pero para este proyecto en particular, una combinación de enfoques ágiles, como Scrum o Kanban, puede ser la más adecuada para permitir una respuesta rápida a los cambios y una mejora continua durante el proceso de desarrollo.
 
