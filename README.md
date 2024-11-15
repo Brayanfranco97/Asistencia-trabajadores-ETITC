@@ -96,7 +96,7 @@ Mantener y ajustar el sistema periódicamente para asegurar su buen funcionamien
 
 ## Diagrama UML de Clases Trabajadores ETITC
 
-https://github.com/Brayanfranco97/Asistencia-trabajadores-ETITC/issues/1#issue-2662553544
+![Diagrama UML de clases trabajadores ETITC mas completo](https://github.com/user-attachments/assets/9f5a9684-8623-4b6c-896f-030f0262a25c)
 
 ## Diagrama UML de Objetos Trabajadores ETITC
 
