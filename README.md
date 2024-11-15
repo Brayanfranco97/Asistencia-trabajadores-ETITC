@@ -1,4 +1,7 @@
 # Asistencia-trabajadores-ETITC
+
+![imagen-asistencia-ETITC](https://github.com/user-attachments/assets/30213436-9971-4d14-8141-618108505df1)
+
 ---
 ## Planteamiento del problema
 El sistema actual de la Universidad ETITC para el registro de asistencia de los trabajadores es manual, lo que genera retrasos, errores humanos, y dificultades en la recolección de datos para su análisis posterior. El objetivo de este proyecto es implementar un sistema automatizado que permita registrar y controlar la asistencia de los empleados de manera eficiente, reduciendo el margen de error y mejorando la capacidad de generar informes precisos en tiempo real.
