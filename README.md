@@ -94,6 +94,17 @@ Capacitar al personal en el uso del sistema.
 
 Mantener y ajustar el sistema periódicamente para asegurar su buen funcionamiento.
 
+## Diagrama UML de Clases Trabajadores ETITC
+
+https://github.com/Brayanfranco97/Asistencia-trabajadores-ETITC/issues/1#issue-2662553544
+
+## Diagrama UML de Objetos Trabajadores ETITC
+
 ## Conclusiones
 La implementación de un sistema automatizado para el registro y control de asistencia en la Universidad ETITC permitirá mejorar la eficiencia del proceso, reducir errores, y facilitar la generación de reportes en tiempo real. Cada metodología de desarrollo presentada (Waterfall, Scrum, Kanban, XP) tiene sus ventajas en diferentes contextos, pero para este proyecto en particular, una combinación de enfoques ágiles, como Scrum o Kanban, puede ser la más adecuada para permitir una respuesta rápida a los cambios y una mejora continua durante el proceso de desarrollo.
 
+## Referencias
+
+El contenido de este proyecto fue desarrollado con el apoyo de ChatGPT, una herramienta de inteligencia artificial de OpenAI, que asistió en la redacción, estructuración y aplicación de conceptos técnicos.
+
+OpenAI. (n.d.). ChatGPT. Disponible en https://chat.openai.com/
