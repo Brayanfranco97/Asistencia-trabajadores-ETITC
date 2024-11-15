@@ -102,6 +102,10 @@ Mantener y ajustar el sistema periódicamente para asegurar su buen funcionamien
 
 ![Diagrama UML de objetos trabajadores ETITC mas completo](https://github.com/user-attachments/assets/13884739-7834-4342-b758-842dc3abf100)
 
+## Diagrama UML de Casos de Uso Trabajadores ETITC
+
+
+
 ## Conclusiones
 La implementación de un sistema automatizado para el registro y control de asistencia en la Universidad ETITC permitirá mejorar la eficiencia del proceso, reducir errores, y facilitar la generación de reportes en tiempo real. Cada metodología de desarrollo presentada (Waterfall, Scrum, Kanban, XP) tiene sus ventajas en diferentes contextos, pero para este proyecto en particular, una combinación de enfoques ágiles, como Scrum o Kanban, puede ser la más adecuada para permitir una respuesta rápida a los cambios y una mejora continua durante el proceso de desarrollo.
 
