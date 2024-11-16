@@ -1,0 +1,123 @@
+## Planteamiento
+
+## Descripción del problema
+
+##Problema Principal:
+
+El sistema actual de control de asistencia de los trabajadores de la Universidad ETITC presenta varias ineficiencias que afectan tanto a la administración como a la organización de las jornadas laborales. Los principales problemas identificados son:
+
+Inexactitudes en el registro de asistencia: Los métodos manuales de registro y los sistemas tradicionales de fichaje no garantizan la precisión, lo que puede generar errores en el control de horarios y la gestión de recursos humanos.
+
+Bajas tasas de confiabilidad: La manipulación de datos y la falta de mecanismos automáticos incrementan el riesgo de fraude o error humano, especialmente cuando los trabajadores olvidan registrar su asistencia o la registran incorrectamente.
+
+Falta de integración con otros sistemas administrativos: El sistema actual no se integra eficazmente con otras plataformas administrativas de la universidad, como la nómina o los registros de vacaciones, lo que dificulta la gestión y la generación de informes consistentes.
+
+Retrasos en la toma de decisiones: La falta de información en tiempo real sobre la asistencia de los trabajadores dificulta la planificación eficiente de recursos y la toma de decisiones operativas.
+
+## Problemas Específicos:
+
+Acceso no autorizado: No hay un control adecuado sobre quién tiene acceso al sistema de asistencia, lo que puede permitir manipulaciones externas de los registros.
+
+Falta de trazabilidad: No existe un sistema que permita hacer seguimiento a las horas de entrada y salida de cada trabajador, dificultando la supervisión de su desempeño.
+
+Falta de flexibilidad en la generación de informes: El sistema actual no permite crear informes detallados y específicos sobre la asistencia, lo que hace que los administradores tengan que invertir tiempo en obtener la información manualmente.
+
+Problemas de seguridad: El sistema no cuenta con los mecanismos de seguridad necesarios para proteger la información sensible, como horarios y salarios.
+
+## Consecuencias de estos problemas:
+
+Inexactitudes en los registros de horas trabajadas: Esto puede generar confusión y conflictos entre los trabajadores y la administración, y en algunos casos, generar pagos incorrectos o injustificados.
+
+Desconfianza y baja moral: Los empleados pueden sentirse desmotivados si perciben que su tiempo de trabajo no es correctamente registrado o recompensado.
+
+Ineficiencia en la toma de decisiones: La falta de acceso a datos precisos y en tiempo real dificulta la toma de decisiones sobre la asignación de recursos y la programación de tareas.
+
+Costos adicionales: La falta de un sistema eficiente de gestión de asistencia puede derivar en costos adicionales por corrección de registros, auditorías o pagos incorrectos.
+
+## Análisis
+
+El sistema propuesto tiene como objetivo mejorar la gestión de la asistencia de los trabajadores de la Universidad ETITC, proporcionando un sistema automatizado de registro, monitoreo y generación de informes. Se enfoca en los siguientes aspectos:
+
+Control de acceso: Garantizar que cada trabajador registre su asistencia de manera precisa y segura.
+
+Monitoreo automático: El sistema registrará la asistencia de los trabajadores de manera automática mediante tecnologías como biometría o tarjetas de acceso.
+
+Trazabilidad y transparencia: Permitir un seguimiento detallado del horario de cada trabajador y mantener un historial accesible y transparente de las horas trabajadas.
+
+Generación de reportes y estadísticas: El sistema generará informes personalizados sobre la asistencia, ayudando a la administración a tomar decisiones más informadas.
+
+Para lograr estos objetivos, se emplearán patrones de diseño como:
+
+Patrón Singleton: Se utilizará para garantizar que haya solo una instancia de la conexión con la base de datos, evitando duplicación de recursos y facilitando el mantenimiento.
+
+Patrón Factory: Permitirá la creación de diferentes tipos de informes (diario, semanal, mensual) según las necesidades del usuario.
+
+Patrón Builder: Será útil para componer informes complejos, permitiendo a los administradores seleccionar el nivel de detalle de los informes generados.
+
+Patrón Observer: Permite que los trabajadores sean notificados de cambios importantes relacionados con su horario o asistencia.
+
+## Diseño de arquitectura
+
+## Análisis de los Requisitos
+
+Los requerimientos del sistema incluyen:
+
+Control de acceso: Autenticación y autorización de trabajadores para registrar su entrada y salida.
+
+Registro de asistencia: Seguimiento automático y registro en tiempo real de la presencia de los trabajadores.
+
+Generación de reportes: Creación de informes detallados sobre la asistencia de los trabajadores y sus horarios.
+
+Seguridad y trazabilidad: Garantizar que solo los usuarios autorizados tengan acceso a la información sensible y permitir un seguimiento transparente de las actividades.
+
+## Propuesta de Arquitectura en Capas
+
+La arquitectura en capas es ideal para este sistema, ya que facilita la separación de responsabilidades y la escalabilidad.
+
+## Capas:
+
+Presentación: Interfaz de usuario para el registro y monitoreo de asistencia. Se puede construir con frameworks como React o Angular.
+
+Lógica de negocio: Contendrá la lógica principal del sistema, como el registro de asistencia, la validación de horarios y la generación de reportes.
+
+Acceso a datos: Interactuará con la base de datos para almacenar y recuperar información relevante sobre la asistencia de los trabajadores.
+
+## Componentes clave y patrones:
+
+## Capa de Presentación:
+
+Patrón MVC: Separará la interfaz de usuario (vista), la lógica de negocio (controlador) y los datos (modelo).
+Frameworks: Angular o React para construir interfaces interactivas.
+Capa de Lógica de Negocio:
+
+ServicioAsistenciaFacade: Proporcionará una interfaz simplificada para la gestión de la asistencia.
+Patrón Singleton: Para la conexión única con la base de datos.
+Patrón Factory y Builder: Para la creación y composición de informes de asistencia.
+Capa de Acceso a Datos:
+
+Conexión Base de Datos: Utilizará un patrón Singleton para mantener una única conexión con la base de datos, optimizando el acceso a la información.
+Propuesta de Solución
+
+## Para resolver los problemas descritos, se propone implementar un sistema de gestión de asistencia automatizado con las siguientes características:
+
+Control de asistencia biométrico o con tarjeta de identificación: Asegurar que cada trabajador se registre de manera precisa al entrar y salir.
+
+Generación de informes en tiempo real: Crear reportes automáticos sobre la asistencia, los horarios trabajados y los faltantes o llegadas tarde.
+
+Integración con otros sistemas administrativos: Vincular el sistema de asistencia con la plataforma de nómina y otros sistemas de recursos humanos.
+
+Seguridad y privacidad: Implementar medidas de seguridad como autenticación multifactor y control de acceso para proteger la información sensible.
+
+Notificaciones automáticas: Enviar alertas y recordatorios a los trabajadores sobre su registro de asistencia y cambios en su horario.
+
+## Beneficios de la Solución Propuesta:
+
+Mejor precisión y confiabilidad en los registros de asistencia.
+
+Mayor transparencia y trazabilidad de la información de asistencia.
+
+Reducción de costos administrativos y mejora en la toma de decisiones gracias a los informes automáticos.
+
+Mayor seguridad en el manejo de la información sensible de los trabajadores.
+
+Este sistema optimizado permitirá mejorar la eficiencia y efectividad de la gestión de la asistencia en la Universidad ETITC, proporcionando una plataforma confiable y transparente tanto para los administradores como para los trabajadores.
