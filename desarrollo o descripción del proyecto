@@ -2,7 +2,7 @@
 
 ## Descripción del problema
 
-##Problema Principal:
+## Problema Principal:
 
 El sistema actual de control de asistencia de los trabajadores de la Universidad ETITC presenta varias ineficiencias que afectan tanto a la administración como a la organización de las jornadas laborales. Los principales problemas identificados son:
 
@@ -56,7 +56,7 @@ Patrón Builder: Será útil para componer informes complejos, permitiendo a los
 
 Patrón Observer: Permite que los trabajadores sean notificados de cambios importantes relacionados con su horario o asistencia.
 
-## Diseño de arquitectura
+### Diseño de arquitectura
 
 ## Análisis de los Requisitos
 
